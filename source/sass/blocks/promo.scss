@@ -1,11 +1,21 @@
 .promo {
   min-height: 825px;
   background-color: $dark;
-  background-image: url("../img/bg-bike.jpg");
+  background-image: url("../img/bg-bike@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: $basic_white;
+
+  @media (max-width: $tablet-width) {
+    min-height: auto;
+    height: 340px;
+    margin-bottom: 410px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 390px;
+  }
 }
 
 .promo__wrapper {
@@ -15,10 +25,30 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    padding-top: 76px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 62px;
+  }
 }
 
 .promo__block {
   width: 45%;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 119px;
+    min-height: 202px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 109px;
+    min-height: 276px;
+  }
 }
 
 .promo__title {
@@ -31,6 +61,12 @@
   font-size: 46px;
   line-height: 64px;
   letter-spacing: -0.005em;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 42px;
+    padding-bottom: 1px;
+  }
 }
 
 .promo__paragraph {
@@ -39,10 +75,31 @@
   line-height: 32px;
   letter-spacing: -0.005em;
   opacity: 0.8;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    padding: 0 140px;
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
 }
 
 .promo__form {
   width: 327px;
+
+  @media (max-width: $tablet-width) {
+    width: 43%;
+    align-self: center;
+    padding-left: 1px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    padding: 0 6px;
+  }
 }
 
 .promo__form-description {
@@ -55,6 +112,16 @@
   margin: 0;
   margin-top: 13px;
   margin-bottom: 19px;
+
+  @media (max-width: $tablet-width) {
+    color: $basic_black;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .promo__input {
@@ -66,7 +133,22 @@
   margin-bottom: 20px;
   font-size: 15px;
   line-height: 24px;
-  padding: 0 30px;
+  padding: 0 29px;
+  padding-top: 3px;
+  letter-spacing: 0.02em;
+
+  &::placeholder {
+    color: rgba($placeholder, 0.5);
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 25px;
+    padding-top: 2px;
+  }
 }
 
 .promo__button {
@@ -82,4 +164,14 @@
   letter-spacing: 0.007em;
   padding-bottom: 0;
   padding-right: 5px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: -1px;
+    padding-bottom: 3px;
+    width: 99.5%;
+  }
 }
