@@ -1,13 +1,15 @@
 .types {
   background-color: $light_bg;
-  padding-bottom: 110px;
+  padding-bottom: 109px;
 
   @media (max-width: $tablet-width) {
     margin-top: -74px;
+    padding-bottom: 20px;
   }
 
   @media (max-width: $mobile-width) {
     margin-top: -11px;
+    padding-bottom: 12px;
   }
 }
 

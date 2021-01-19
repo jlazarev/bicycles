@@ -173,7 +173,20 @@
           В этом видео мы подробно расскажем про особенности выбора велосипеда для себя
         </p>
 
-        <!-- тут видео -->
+        <div class="video__box">
+          <picture>
+            <source type="image/webp" srcset="img/bg-video@1x.webp 1x, img/bg-video@2x.webp 2x">
+
+            <img class="types__picture" src="img/bg-video@1x.jpg" srcset="img/bg-video@2x.jpg 2x" alt="видео">
+          </picture>
+
+          <button class="video__play" type="button">
+            <span class="visually-hidden">воспроизвести</span>
+            <svg width="14" height="20">
+              <use xlink:href="img/sprite_auto.svg#icon-play"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
   </main>
