@@ -59,6 +59,7 @@
   overflow: hidden;
   margin: 0 auto;
   position: relative;
+  background-color: $grey_dark;
 
   @media (max-width: $tablet-width) {
     width: 698px;
@@ -114,6 +115,11 @@
   line-height: 22px;
   color: rgba($basic_black, 0.5);
   position: relative;
+
+  &:hover,
+  &:focus {
+    color: rgba($basic_black, 0.9);
+  }
 
   & svg {
     position: absolute;

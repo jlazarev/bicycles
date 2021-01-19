@@ -84,6 +84,12 @@
   border-radius: 50%;
   background-color: $turquoise;
 
+  &:hover,
+  &:focus {
+    background-color: $hover_btn;
+    cursor: pointer;
+  }
+
   @media (max-width: $tablet-width) {
     width: 90px;
     height: 90px;
