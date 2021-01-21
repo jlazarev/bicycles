@@ -93,17 +93,25 @@
 .page-footer__contacts {
   text-align: center;
   margin-top: 39px;
-  padding-left: 25px;
+  padding-left: 274px;
+  padding-right: 293px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   @media (max-width: $tablet-width) {
     margin-top: 23px;
+    padding-left: 61px;
+    padding-right: 76px;
   }
 
   @media (max-width: $mobile-width) {
-    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    padding-left: 0;
+    padding-right: 20px;
   }
 }
 
@@ -115,6 +123,7 @@
   line-height: 22px;
   color: rgba($basic_black, 0.5);
   position: relative;
+  padding-left: 45px;
 
   &:hover,
   &:focus {
@@ -127,7 +136,7 @@
 }
 
 .page-footer__email {
-  margin-right: 124px;
+  margin-right: 0;
 
   @media (max-width: $mobile-width) {
     margin-right: 0;
@@ -140,12 +149,12 @@
 
   & svg {
     top: 2px;
-    left: -41px;
+    left: 3px;
   }
 }
 
 .page-footer__phone svg {
   top: -2px;
-  left: -38px;
+  left: 8px;
   fill: transparent;
 }
