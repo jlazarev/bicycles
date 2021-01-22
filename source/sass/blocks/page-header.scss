@@ -6,7 +6,7 @@
   z-index: 10;
 
   @media (max-width: $tablet-width) {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
@@ -34,6 +34,7 @@
   @media (max-width: $tablet-width) {
     margin-top: 25px;
     margin-left: 21px;
+    position: static;
   }
 
   @media (max-width: $mobile-width) {
@@ -96,7 +97,7 @@
 .page-header--open-menu {
   @media (max-width: $tablet-width) {
     background-color: $basic_white;
-    position: fixed;
+    position: absolute;
   }
 }
 
