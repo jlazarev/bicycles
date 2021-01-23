@@ -97,7 +97,13 @@
 .page-header--open-menu {
   @media (max-width: $tablet-width) {
     background-color: $basic_white;
-    position: absolute;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
   }
 }
 
